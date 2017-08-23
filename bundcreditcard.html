@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<link rel="shortcut icon" type="image/x-icon" href="img/ico/icon.ico">
+		<title>绑定银行卡</title>
+		<link rel="stylesheet" href="css/base.css" />
+		<link rel="stylesheet" href="css/common.css" />
+		<link rel="stylesheet" href="css/cxcss.css" />
+	</head>
+	<body class="html_register html_buildcard">
+		<header class="header">
+			<div class="top_nav panelcenter">
+				<ul classs="clearfix">
+					<li>你好，<a>请登录</a><span></span></li>
+					<li><a>免费注册</a><span></span></li>
+					<li><a>VIP 专业理财</a><span></span></li>
+					<li><a>长信APP</a><span></span></li>
+					<li><a>官方微信</a><span></span></li>
+					<li><a>官方微博</a></li>
+				</ul>
+			</div>
+			<div class="center_search">
+				<div class="panelcenter clearfix">
+					<img class="left_logo" src="img/ico/changxinlogo.png">
+					<div class="right_input">
+						<img  src="img/ico/ind_search.png"/>
+						<input type="text" placeholder="搜索"/>
+						<label>客服热线：400-700-5566</label>
+					</div>
+				</div>
+			</div>
+			
+		</header>
+	
+		<section class="page_register panelcenter">
+			<div class="top_title clearfix">
+				<img src="img/ico/bundingcard.png"/>
+				<h1>绑卡</h1>
+			</div> 
+			<div class="top_step top_step_buildcard">        
+				<ul class="clearfix">
+					<li class="current">输入个人信息</li>
+					<li>选择银行卡</li>
+					<li>设置密码</li>
+					<li>绑卡成功</li>
+				</ul>
+				<p class="br"></p>
+			</div>
+			<div class="step center_info center_info_buildcard" style="display: block;" >
+				<p class="p_phone icon_card"><input placeholder="姓名"/></p>
+				<p class="p_phone icon_bu_type">
+					<input placeholder="证件类型" readonly/>
+					<select>
+						<option>身份证</option>
+						<option>驾照</option>
+						<option>护照</option>
+					</select>
+				</p>
+				<p class="p_phone icon_bu_name"><input placeholder="证件号码"/></p>
+				<p class="p_phone"><input placeholder="手机号"/></p>
+				<p class="tip">
+					<label>注：请与银行预留的手机号一致</label>
+					<a id="changephone">更换手机号</a>
+				</p>
+				<p class="p_button">
+					<button class="button but_return exit">返回</button>
+					<button class=" button but_next">下一步</button>
+				</p>
+			</div>
+			
+			<div class="step center_info center_info_buildcard">
+				<div id="" class="icon_bank">
+					<p class="p_phone">
+						<input placeholder="所属银行" readonly/>
+						<img class="choosebank"  id="choosebank" src="img/images/choose.png" />
+					</p>
+					<div class="banklist" id="banklist" >
+						<ul class="clearfix">
+							<li>
+								<img src="img/images/chinabank.png"/>
+								<p><span>申购<s>4</s>折</span>
+									<span>定投<s>4</s>折
+								</p>
+							</li>
+							<li>
+								<img src="img/images/chinabank.png"/>
+								<p><span>申购<s>4</s>折</span>
+									<span>定投<s>4</s>折
+								</p>
+							</li>
+							<li>
+								<img src="img/images/chinabank.png"/>
+								<p><span>申购<s>4</s>折</span>
+									<span>定投<s>4</s>折
+								</p>
+							</li>
+						</ul>
+					</div>
+				</div>
+				<p class="p_phone icon_banknum"><input placeholder="银行卡号"/></p>
+				<p class="p_phone"><input placeholder="手机号"/></p>
+				<div class="div_phonecheck clearfix">
+					<p class="p_imgcheck p_phonecheck"><input placeholder="手机验证码"/></p>
+					<button class="p_imgcheck_img but_getphonenum">验证码获取</button>
+				</div>
+				<p class="p_agree"><span class="ischoose"></span><a>我已阅读并同意《中国银行快捷开户协议》</a></p>
+				
+				<p class="p_button">
+					<button class="button but_return exit">返回</button>
+					<button class=" button but_next">下一步</button>
+				</p>
+			</div>
+		
+	
+		
+		
+			<div class="step center_info center_info_buildcard" >
+				<p class="p_phone settingpwd"><input placeholder="设置密码"/></p>
+				<p class="p_phone confirmpwd"><input placeholder="确认密码"/></p>
+				<p class="p_button">
+					<button class="button but_return exit">返回</button>
+					<button class="button but_next">下一步</button></p>
+			</div>
+			
+			<div class="step center_info center_info_buildcard" style="display: ;" >
+				<p class="prosityou">
+					恭喜你，银行卡绑定成功！
+				</p>
+				<p class="p_button ">
+					<button class="button but_return exit">返回首页</button>
+					<button class="button but_next">申购基金</button>
+				</p>
+			</div>
+			
+		</section>
+		
+		<footer class="footer">
+			<div>
+				<p>© 2017 长信基金 版权所有 沪ICP备06007464号 |</p>
+				<p>本网站所有资讯与说明文字仅供参考，如有与本公司相关公告及法律文件不符，以相关公告及基金法律文件为准。</p>
+			</div>
+		</footer>
+		<script type="text/javascript" src="js/jquery-3.0.0.min.js" ></script>
+		<script type="text/javascript" src="js/layer/layer.js" ></script>
+		<script>
+			$(function(){
+				$("#changephone").on("click",function(){ 
+					 layer.open({
+					    title: '设置新手机号',
+					    area: ['480px', '340px'],
+					    content:'<div class="page_register layer_page_register"><div class="step center_info"><p class="p_phone"><input placeholder="手机号"/></p>'+
+					    '<div class="div_phonecheck clearfix"><p class="p_imgcheck p_phonecheck"><input placeholder="手机验证码"/></p>'+
+						'<button class="p_imgcheck_img but_getphonenum">验证码获取</button></div>'+
+						'<p class="p_button"><button class="button but_return exit">返回</button>'+
+						'<button class="button but_next">下一步</button></p></div></div>'
+					  ,
+					  btn: false
+					  });
+				
+				});
+				$("#choosebank").click(function(){
+					$("#banklist").slideToggle();
+				});
+			});
+		</script>
+	</body>
+</html>

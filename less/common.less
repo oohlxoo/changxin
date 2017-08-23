@@ -1,0 +1,119 @@
+.panelcenter{
+    width: 1200px;
+    margin: 0 auto;
+}
+html{
+    height: 100%;
+}
+body{
+    font-size: 14px;
+    color: #dfdfdf;
+    background-color: #ededed;
+}
+//头部
+.header{
+    min-width: 1200px;
+    .top_nav{
+        height: 24px;
+        color: #b2b2b2;
+        line-height: 24px;
+        ul{
+            float: right;
+            margin-right: 90px;
+            li{
+                float: left;
+                margin: 0 10px;
+                position: relative;
+                
+                a{
+                     color: #b2b2b2;
+                }
+                span{
+                    display: inline-block;
+                    background: #b2b2b2;
+                    width: 1px;
+                    height: 12px;
+                    position: absolute;
+                    top: 6px;
+                    right: -11px;
+                     
+                    
+                }
+            }
+        }
+    }
+    .center_search{
+        height: 52px;
+        background: #FFFFFF;
+        width: 100%;
+        .left_logo{
+            height: 43px;
+            width: 146px;
+            display: inline-block;
+            float: left;
+            margin-top:5px;
+            margin-bottom:5px;
+            margin-left: 90px;
+        }
+        .right_input{
+            float: right;
+            height: 52px;
+            margin-right: 88px;
+            img{
+                width: 32px;
+                height: 25px;
+                margin: 13px 0;
+                display: inline-block;
+                float: left;
+                
+            }
+            input{
+                background: #dfdfdf;
+                color: #fff;
+                border-radius: 8px;
+                height: 25px;
+                line-height: 25px;
+                text-indent: 6px;
+                float: left;
+                margin-top: 13px;
+            }
+            input::-webkit-input-placeholder {
+                color: #FFFFFF;
+            }
+            input:-ms-input-placeholder { 
+                color: #FFFFFF;
+            }
+            input:-moz-placeholder { 
+                color: #FFFFFF;
+            }
+            input::-moz-placeholder { 
+                color: #FFFFFF;
+            }
+            label{
+                margin-left: 20px;
+                color: #606060;
+                height: 52px;
+                line-height: 52px;
+                
+            }
+        }
+    }
+}
+
+
+//定义公共的button
+.button{
+    width: 96px;
+    height: 30px;
+    border-radius: 4px;
+    font-size: 16px;
+    color: #FFFFFF;
+    background: #fa5936;
+    text-align: center;
+    cursor: pointer;
+    &.exit{
+        color:#fa5936;
+        border:1px solid #fa5936;
+        background: none;
+    }
+}

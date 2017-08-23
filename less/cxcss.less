@@ -1,0 +1,317 @@
+//注册
+.html_register{
+    position: relative;
+    height: auto;        
+    min-height: 100%;
+.page_register{
+    background-color: #FFFFFF;
+    margin-top: 20px;
+    overflow: hidden;
+    padding-bottom: 78px; 
+    .top_title{
+        width: 274px;
+        margin: 70px auto 0;
+        height: 60px;
+        img{
+            width: 54px;
+            height: 40px;
+            float: left;
+            margin-top: 10px;
+        }
+        h1{
+            font-size: 40px;
+            color: #606060;
+            float: left;
+            height: 60px;
+            line-height: 60px;
+            margin-left: 60px;
+        }
+    }
+    .top_step{
+        height:60px;
+        width: 100%;
+        position: relative;
+        .br{
+            position: absolute;
+            top: 36px;
+            height: 2px;
+            width: 100%;
+            border-bottom: 2px solid #fa5936; 
+        }
+        ul{
+            width: 880px;
+            margin: 40px auto;
+            font-size: 20px;
+           
+           li{
+               float: left;
+               color: #606060;
+               margin: 0 104px;
+               line-height: 40px;
+               text-align: center;
+             
+                
+               &.current{
+                   color: #fa5936;
+                    border-bottom: 4px solid #fa5936;
+                   
+               }
+              
+           } 
+        }
+    }
+    .center_info{
+        width: 402px;
+        margin: 60px auto 0;
+        p{
+            height: 46px;
+          
+            &.p_phone{
+            margin-bottom: 15px;
+            width: 100%;
+                border: 1px solid #e6e6e6;
+                background: url(../img/ico/reg_phone.png) no-repeat 20px 7px;
+                input{
+                    width: 335px;
+                    line-height: 36px;
+                    height: 36px;
+                    margin-left: 60px;
+                    margin-top: 5px;
+                    border-left: 1px solid  #e6e6e6;
+                    padding-left: 5px;
+                }
+            }
+            &.settingpwd{
+                background: url(../img/ico/settingpwd.png) no-repeat 20px 7px;
+            }
+            &.confirmpwd{
+                background: url(../img/ico/confirmpwd.png) no-repeat 20px 7px;
+            }
+            &.prosityou{
+                background: url(../img/ico/prosit.png) no-repeat 0 0;
+                font-size: 36px;
+                color: #606060;
+                height: 60px;
+                padding-left: 76px;
+                
+            }
+            
+        }
+        .div_imgcheck, .div_phonecheck{
+            height: 46px;
+            margin-bottom: 15px;
+            .p_imgcheck{
+                width: 300px;
+                border: 1px solid #e6e6e6;
+                float: left;
+                background: url(../img/ico/reg_imgcheck.png) no-repeat 20px 15px;
+                input{
+                    width: 232px;
+                    line-height: 36px;
+                    height: 36px;
+                    margin-top: 5px;
+                    border-left:1px solid  #e6e6e6;
+                    margin-left: 60px;
+                    padding-left: 5px;
+                }
+                
+            }
+            .p_imgcheck_img{
+               display: inline-block;
+               margin-left: 8px;
+               width: 90px;
+               height: 46px;
+               border:1px solid  #e6e6e6;
+               float: left;
+            }
+            
+            .p_phonecheck{
+                background: url(../img/ico/reg_phonecheck.png) no-repeat 22px 8px !important;
+                 
+            }
+            .but_getphonenum{
+                font-size: 14px;
+                text-align: center;
+                color: #fa5936;
+                background: none;
+            }
+        } 
+        .p_agree{
+            span{
+                width: 13px;
+                height: 13px;
+                display: inline-block;
+                margin: 0 10px 0 50px;
+                background:url(../img/ico/reg_yes.png) no-repeat;
+                background-size: 13px 13px;
+              
+                &.ischoose{
+                background-size: 13px 13px;
+                background:url(../img/ico/reg_yesed.png) no-repeat;
+                }
+            }
+        }
+        .p_button{
+            margin-top:50px;
+           .but_return{
+               margin-left: 50px;
+           }
+           .but_next{
+               margin-left: 130px;
+           }
+        }
+    }
+
+}
+.footer{
+    position: absolute;  
+    bottom: 0; 
+    left:0; 
+    height: 78px;
+    width: 100%;
+    background: #7a7a7a;
+     overflow: hidden;
+    div{
+        margin: 18px auto;
+         p{
+             width: 100%;
+            line-height: 20px;
+            color: #fff;
+            text-align: center;
+        }
+    }
+}
+}
+
+//绑定银行卡
+.html_buildcard{
+    .top_step_buildcard{
+        ul{
+            li{
+               margin: 0 62px !important;
+            }
+        }
+    }
+    .center_info_buildcard{
+        .icon_card{
+             background: url(../img/ico/bu_name.png) no-repeat 18px 7px !important;
+        }
+        .icon_bu_type{
+             background: url(../img/ico/bu_type.png) no-repeat 14x 16px !important;
+             input{
+                border-right: 1px solid #e6e6e6 !important;
+                width: 60px !important;
+            }
+            select{
+                border:none !important;
+                width: 250px !important;
+                height: 46px !important;
+             }
+             select {
+                outline: none;  
+                -webkit-tap-highlight-color: rgba(0,0,0,0);  
+                border: solid 1px #000;
+                appearance:none;
+                -moz-appearance:none;
+                -webkit-appearance:none;
+                background: url(../img/ico/bu_arrow.png) no-repeat scroll right center transparent;
+                padding-right: 14px;
+                option{
+                    height: 60px !important;
+                }
+            }
+                select::-ms-expand { display: none; }
+    }
+    .icon_bu_name{
+             background: url(../img/ico/bu_card.png) no-repeat 16px 15px !important;
+        }
+    .tip{
+        label{
+            color: #606060;
+        }
+        a{
+            color: #fa5936;
+            float: right;
+        }
+    }
+    .icon_bank{
+        position: relative;
+        background: url(../img/ico/bank.png) no-repeat 16px 9px !important;
+        .p_phone{
+             background: none !important;
+       
+        }
+       input{
+            border-right: 1px solid #e6e6e6 !important;
+            width: 60px !important;
+            float: left;
+        }
+        img{
+            width: 120px;
+            height: 30px;
+            display: inline-block;
+            margin-top: 8px;
+            cursor: pointer;
+            padding-right: 150px;
+        }
+        
+        .banklist{
+            position: absolute;
+            top:47px;
+            left: 0;
+            width: 100%;
+            min-height: 200px;
+            border: 1px solid #e6e6e6;
+            background: #ffffff;
+            display: none;
+            ul{
+                overflow: hidden;
+                li{
+                    width: 120px;
+                    float: left;
+                    margin: 6px;
+                    border: 1px solid #e6e6e6;
+                    p{
+                        line-height: 20px;
+                        height: 20px;
+                        span{
+                            width: 60px;
+                            color: #606060;
+                            font-size: 12px;
+                           float: left;
+                           cursor: pointer;
+                           text-align: center;
+                           s{
+                               color: #fa5936;
+                           }
+                        }
+                    }
+                }
+            }
+        }
+    }
+    .icon_banknum{
+         background: url(../img/ico/banknum.png) no-repeat 16px 9px !important;
+        
+    }
+    .p_agree{
+       a{
+           color: #606060;
+       }
+    }
+    .prosityou{
+        font-size: 26px !important;
+        line-height: 60px;
+    }
+}
+}
+
+//弹框样式 绑定银行卡-修改手机号码
+.layer_page_register{
+  .center_info{
+        margin: 0 !important;
+    }
+    &.page_register {
+        padding-bottom: 0 !important;
+    }
+}
